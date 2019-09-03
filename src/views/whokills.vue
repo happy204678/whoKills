@@ -61,15 +61,15 @@
         </ul>
       </div>
       <div class="card">
-        <img v-if="pos === 0" src="/static/image/whokills/id1.jpg"/>
-        <img v-if="pos === 1" src="/static/image/whokills/id6.jpg"/>
-        <img src="/static/image/whokills/id3.jpg"/>
-        <img src="/static/image/whokills/id2.jpg"/>
-        <img src="/static/image/whokills/id4.jpg"/>
-        <img src="/static/image/whokills/id5.jpg"/>
-        <img v-if="pos === 0" src="/static/image/whokills/id5.jpg"/>
-        <img v-if="pos === 1" src="/static/image/whokills/id7.jpg"/>
-        <img src="/static/image/whokills/id5.jpg"/>
+        <img v-if="pos === 0" src="../../static/image/whokills/id1.jpg"/>
+        <img v-if="pos === 1" src="../../static/image/whokills/id6.jpg"/>
+        <img src="../../static/image/whokills/id3.jpg"/>
+        <img src="../../static/image/whokills/id2.jpg"/>
+        <img src="../../static/image/whokills/id4.jpg"/>
+        <img src="../../static/image/whokills/id5.jpg"/>
+        <img v-if="pos === 0" src="../../static/image/whokills/id5.jpg"/>
+        <img v-if="pos === 1" src="../../static/image/whokills/id7.jpg"/>
+        <img src="../../static/image/whokills/id5.jpg"/>
       </div>
     </div>
   </div>

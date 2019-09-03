@@ -105,11 +105,16 @@ div {
     margin: 20px auto;
     font-size: 21px;
     overflow: hidden;
+    width: 215px;
   }
   .login button {
     font-size: 29px;
     height: 47px;
     width: 100%;
+    width: 130px;
+    border: none;
+    background: #d4d4d4;
+
   }
   .hall {
     display: none;

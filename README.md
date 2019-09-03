@@ -38,3 +38,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
+
+
+DEMO: https://happy204678.github.io/whoKills/

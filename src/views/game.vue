@@ -58,7 +58,7 @@
       <div class="identify" v-if="player.includes(loginName)">
         <div class="card-front"></div>
         <div class="card-back">
-          <img v-if="identify.length > 0" :src="'/static/image/whokills/id' + identify[player.indexOf(loginName)] + '.jpg'"/>
+          <img v-if="identify.length > 0" :src="'../../static/image/whokills/id' + identify[player.indexOf(loginName)] + '.jpg'"/>
         </div>
       </div>
     </div>
@@ -101,8 +101,8 @@
       <div class="witch" v-if="step === 4 && identify[player.indexOf(loginName)] === 2">
         <span class="red" v-if="!doSave">{{ killed[0] + 1 }}號 {{player[killed[0]]}} 被殺了</span>
         <div class="witchCard">
-          <img @click="save()" :class="{'displaynone': killed[0] !== player.indexOf(loginName) || !doSave, 'displayunset': nightCount === 0}" src="/static/image/whokills/id9.jpg"/>
-          <img v-if="!doPoison" @click="poisonFadein()" src="/static/image/whokills/id10.jpg"/>
+          <img @click="save()" :class="{'displaynone': killed[0] !== player.indexOf(loginName) || !doSave, 'displayunset': nightCount === 0}" src="../../static/image/whokills/id9.jpg"/>
+          <img v-if="!doPoison" @click="poisonFadein()" src="../../static/image/whokills/id10.jpg"/>
         </div>
         <button @click="noSaveOrPoison()">不要</button>
         <div class="poison-btn">
