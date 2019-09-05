@@ -38,6 +38,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
-
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "server": "node build/build.js",
+    "start": "node app.js",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "e2e": "node test/e2e/runner.js",
+    "test": "npm run unit && npm run e2e",
+    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
+    "build": "node build/build.js"
+  },
 
 DEMO: https://happy204678.github.io/whoKills/
