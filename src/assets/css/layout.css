@@ -137,17 +137,26 @@ div {
     border: white 1px solid;
     border-radius: 2vw
   }
-  .hall .readymember {
+  .hall .roomlist {
     position: relative;
     width: 74vw;
     height: 545px;
-    margin: 0 2vw 2vw 0;
+    margin: 0 0 2vw 0;
     background-color: rgba(19, 19, 19, 0.9)
   }
-  .hall .member {
+  .hall .memberset {
     position: relative;
-    width: 260px;
-    height: 430px;
+    width: 19vw;
+    height: 9vh;
+    margin: 0 0 2vw 0;
+    background-color: rgba(19, 19, 19, 0.6);
+    color: #ffffff;
+    text-align: center;
+  }
+  .hall .memberlist {
+    position: relative;
+    width: 19vw;
+    height: 34vh;
     margin: 0 0 2vw 0;
     background-color: rgba(19, 19, 19, 0.6);
     color: #ffffff
@@ -159,45 +168,60 @@ div {
     background-color: rgba(19, 19, 19, 0.6)
   }
   .hall .modeselect {
-    width: 260px;
+    width: 19vw;
     height: 430px;
     background-color: rgba(19, 19, 19, 0.6)
   }
-  .hall .readymember h1 {
+  .hall .roomlist h1 {
     position: relative;
     font-size: 100px;
     margin: 0 0 0 20px;
     color: rgb(36, 36, 36);
   }
-  .hall .readymember div {
-    position: relative;
-    padding: 1.1vw;
-    width: 47%;
-    height: auto;
-    margin: 0;
-    float: left;
+  .hall .roomlist>div {
+    color: rgb(155, 155, 155);
+    padding: 0vw 1vw;
+    height: 41vh;
+    overflow: overlay;
   }
-  .hall .readymember div:nth-last-child() {
-
-    float: right
+  .hall .roomlist div table{
+    border-radius: 1vw;
+    width: -webkit-fill-available;
   }
-  .hall .readymember p {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 70px;
+  .hall .roomlist div table th, .hall .roomlist div table td{
+    padding-left: 1vw;
   }
-  .hall .readymember button {
+  .hall .roomlist div.roomrow table thead {
+    height: 1vh;
+    text-align: left;
+    background: rgb(94, 94, 94)
+  }
+  .hall .roomlist div.roomrow table thead tr {
+    height: 3vh;
+  }
+  .hall .roomlist div.roomrow table thead th:first-child{
+    border-top-left-radius: 10px;
+  }
+  .hall .roomlist div.roomrow table thead th:last-child{
+    border-top-right-radius: 10px;
+  }
+  .hall .roomlist div.roomrow table tbody {
+    background: rgb(34, 34, 34)
+  }
+  .hall .roomlist div.roomrow table tbody tr:hover {
+    background: rgb(53, 53, 53)
+  }
+  /* .hall .roomlist button {
     position: absolute;
     bottom: 10px;
     width: 100px;
     height: 50px;
     left: 45%
-  }
-  .hall .member h3 {
+  } */
+  .hall h3 {
     text-align: center;
     color: white;
-    margin-top: 6px
+    margin: 1vh
   }
   .hall .member .memberList {
     margin: 1vw;
@@ -206,17 +230,13 @@ div {
     border-radius: 17px;
     height: 285px;
   }
-  .hall .member .memberList .countPoeple{
+  .hall .memberlist .countPoeple{
     position: absolute;
-    bottom: 85px;
-    right: 35px;
+    bottom: 1vh;
+    right: 1vw;
     color: white
   }
-  .hall .member .ready {
-    width: 100%;
-    text-align: center;
-  }
-  .hall .member button{
+  .hall button{
     width: 60px;
     height: 30px;
     background-color: rgb(77, 77, 77);
@@ -234,73 +254,37 @@ div {
     width: 100%;
   }
   .hall .carddisplay img{
-
-    width: 130px;
-    height: 200px;
+    width: 8vw;
+    height: 19vh;
     /* width: 8vw;
     height: 12vw; */
     border-radius: 5px;
     position: absolute;
-    top: 60px;
+    bottom: 2vh;
     box-shadow:0px 0px 10px rgba(10,10,0.8);
     float: left;
     transition:0.5s all ease;
   }
   .hall .carddisplay img:nth-child(1){
-    left:280px;
-    transform: rotate(-15deg)
-  }
-  .hall .carddisplay img:nth-child(1):hover {
-    z-index: 10;
-    top: 45px;
+    left:2.9vw;
   }
   .hall .carddisplay img:nth-child(2){
-    left:395px;
-    top: 40px;
-    transform: rotate(-6deg)
-  }
-  .hall .carddisplay img:nth-child(2):hover {
-    z-index: 10;
-    top: 30px;
+    left:12.9vw;
   }
   .hall .carddisplay img:nth-child(3){
-    left:500px;
-    top: 40px;
-    transform: rotate(6deg);
-  }
-  .hall .carddisplay img:nth-child(3):hover {
-    z-index: 10;
-    top: 30px;
+    left:22.9vw;
   }
   .hall .carddisplay img:nth-child(4){
-    left:615px;
-    transform: rotate(15deg)
-  }
-  .hall .carddisplay img:nth-child(4):hover {
-    top: 45px;
+    left:32.9vw;
   }
   .hall .carddisplay img:nth-child(5){
-    right: 258px;
-  }
-  .hall .carddisplay img:nth-child(5):hover {
-    z-index: 10;
-    top: 45px;
+    left: 42.9vw;
   }
   .hall .carddisplay img:nth-child(6){
-    right: 160px;
-    z-index: 2;
-    top:40px
-  }
-  .hall .carddisplay img:nth-child(6):hover {
-    z-index: 10;
-    top: 30px;
+    left: 52.9vw;
   }
   .hall .carddisplay img:nth-child(7){
-    right: 50px
-  }
-  .hall .carddisplay img:nth-child(7):hover {
-    z-index: 10;
-    top: 45px;
+    left: 62.9vw
   }
   .hall .modeselect h3 {
     text-align: center;
@@ -322,7 +306,7 @@ div {
     border-color: rgb(121, 121, 121)
   }
   .game-bg {
-    display: none;
+    /* display: none; */
     height: -webkit-fill-available;
     width: 100%;
     background-image: url('../images/background.jpg');
